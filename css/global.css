@@ -1,3 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+/* .inter-<uniquifier> {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+} */
+
+
+
+
 *,
 *::before,
 *::after {
@@ -17,6 +29,26 @@
     --third-text-color-deepdark: #18171D;
 }
 
+a {
+    all: unset;
+    cursor: pointer;
+}
+
 .container {
     max-width: 1200px;
+    border: #2091F9 solid 1px;
+}
+
+img,
+svg {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+ul,
+ol {
+    margin: 0;
+    padding: 0;
+    list-style: none;
 }

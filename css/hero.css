@@ -1,3 +1,5 @@
-/* .header-hero-wrapper {
+.header-hero-wrapper {
     background-image: url("../img/bg-hero.jpg");
-} */
+    background-size: cover;
+    background-position: center;
+}
