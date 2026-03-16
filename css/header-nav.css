@@ -1,0 +1,49 @@
+.header {
+    width: 100%;
+}
+
+.header__container {
+    display: flex;
+    align-items: center;
+    padding: 8px 16px;
+}
+
+/* ліва частина */
+.header__nav {
+    flex: 1;
+}
+
+/* центр */
+.header__logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* права частина */
+.header__social {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    gap: 16px;
+}
+
+.header__nav-list {
+    display: flex;
+    gap: 24px;
+}
+
+/* twitter */
+.header__social-link--twitter {
+    background-image: url("img/twiter-logo.svg");
+}
+
+/* facebook */
+.header__social-link--facebook {
+    background-image: url("img/facebook-logo.svg");
+}
+
+/* linkedin */
+.header__social-link--linkedin {
+    background-image: url("img/in-logo.svg");
+}
