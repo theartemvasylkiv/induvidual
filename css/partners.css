@@ -1,0 +1,107 @@
+/* ===== CONTAINER ===== */
+.partners__container {
+    padding: 50px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    text-align: center;
+}
+
+/* ===== TITLE ===== */
+.partners__title {
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 55px;
+    letter-spacing: 0.2px;
+    text-align: center;
+}
+
+/* ===== DESCRIPTION ===== */
+.partners__description {
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 40px;
+    letter-spacing: 0.2px;
+    text-align: center;
+}
+
+/* ===== GRID ===== */
+.partners__grid {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    /* mobile */
+    gap: 30px;
+    padding-bottom: 80px;
+}
+
+/* ===== ITEM ===== */
+.partners__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.partners__item img {
+    width: 100%;
+    min-width: 273px;
+
+}
+
+.partners__item:nth-child(n+4) {
+    display: none;
+}
+
+/* ===== LOGO ===== */
+.partners__logo {
+    width: 100%;
+    max-width: 120px;
+    height: auto;
+    object-fit: contain;
+}
+
+
+.partners__button {
+    height: 60px;
+}
+
+.partners__item:hover {
+    border-color: var(--color-primary);
+}
+
+/* ===== TABLET ===== */
+@media (min-width: 768px) {
+    .partners__grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* ===== DESKTOP ===== */
+@media (min-width: 1024px) {
+    .partners__grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .partners__container {
+        padding: 80px 20px;
+    }
+
+    .partners__title {
+        font-size: 48px;
+    }
+
+    .partners__description {
+        font-size: 20px;
+    }
+}
+
+@media (min-width: 768px) {
+    .partners__item:nth-child(n+4) {
+        display: flex;
+    }
+}
