@@ -55,19 +55,45 @@
     flex-direction: column;
     gap: 45px;
     padding: 50px;
+}
 
-    .contacts-form__fields {
-        display: flex;
-        flex-direction: column;
-        gap: 45px;
+.contacts-form__title {
+    font-family: "Inter", sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 28px;
+    letter-spacing: 0.1px;
+    text-align: center;
+    width: 100%;
+}
+
+.contacts-form__fields {
+    display: flex;
+    flex-direction: column;
+    gap: 45px;
+
+    .contacts-form__input {
+        background-color: var(--form-color-grey);
+        gap: 47px;
+        opacity: 1;
+        padding-top: 19px;
+        padding-right: 20px;
+        padding-bottom: 19px;
+        padding-left: 20px;
+        border-radius: 39px;
+        border-width: 1px;
     }
 
-    .contacts-form__title {
-        font-family: "Inter", sans-serif;
-        font-weight: 400;
-        font-size: 32px;
-        line-height: 40px;
-        letter-spacing: 0.2px;
-        text-align: center;
+    .contacts-form__textarea {
+        background-color: var(--form-color-grey);
+        width: 280px;
+        height: 193px;
+        gap: 47px;
+        opacity: 1;
+        padding-top: 23px;
+        padding-right: 20px;
+        padding-bottom: 23px;
+        padding-left: 20px;
+        border-width: 1px;
     }
 }
