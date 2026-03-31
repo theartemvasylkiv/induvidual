@@ -1,34 +1,85 @@
-.hero__container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    min-height: 690px;
-    padding: 50px 20px;
-    gap: 60px;
+.hero {
+    .hero__container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        min-height: 690px;
+        padding: 50px 20px;
+        gap: 60px;
+
+        .hero__content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+            color: var(--primary-color-light);
+
+            .hero__title {
+                font-weight: 400;
+                font-size: 48px;
+                line-height: 55px;
+                letter-spacing: 0.2px;
+                text-align: center;
+            }
+
+            .hero__subtitle {
+                font-weight: 400;
+                font-size: 28px;
+                line-height: 40px;
+                letter-spacing: 0.2px;
+                text-align: center;
+            }
+        }
+
+        .hero__button {
+            max-width: 500px;
+        }
+    }
 }
 
+@media (min-width: 768px) {
+    .hero {
+        .hero__container {
+            padding: 70px 28px;
+            gap: 90px;
 
-.hero__content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 20px;
+            .hero__content {
+                gap: 40px;
+
+                .hero__title {
+                    font-size: 56px;
+                }
+
+                .hero__subtitle {
+                    font-size: 36px;
+                }
+            }
+
+            .hero__button {
+                padding: 20px 0;
+            }
+        }
+    }
 }
 
-.hero__content {
-    color: var(--primary-color-light);
-    font-weight: 400;
-    font-size: 28px;
-    line-height: 40px;
-    letter-spacing: 0.2px;
-    text-align: center;
-}
+@media (min-width: 1024px) {
+    .hero {
+        .hero__container {
 
-.hero__title {
-    font-weight: 400;
-    font-size: 48px;
-    line-height: 55px;
-    letter-spacing: 0.2px;
-    text-align: center;
+            .hero__content {
+                .hero__title {
+                    font-size: 64px;
+                }
+
+                .hero__subtitle {
+                    font-size: 44px;
+                }
+            }
+
+            .hero__button {
+                padding: 24px 0;
+            }
+        }
+    }
 }
